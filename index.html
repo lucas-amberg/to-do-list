@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="main-body-container">
-        <div class="side-bar-hidden">
+        <div class="side-bar-hidden side-bar">
             <button class="side-bar-button hamburger-button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" >
                 <svg width="100%" height="100%" viewBox="0 0 100 100">
                     <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -22,6 +22,11 @@
                 <div class="heading">To Do</div>
             </div>
             <div class="content" id="content">
+                <button class="new-item-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                      </svg>
+                </button>
             </div>
         </div>
     </div>
