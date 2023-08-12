@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 :root {
     --dark-color: #233142;
     --gray-color: #455d7a;
@@ -52,11 +54,21 @@
     height: 60px;
     flex-grow: 0;
     background-color: var(--red-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
 .content {
     background-color: var(--white-color);
     flex: 1;
+}
+
+.heading {
+    font-family: "Oswald", sans-serif;
+    color: var(--white-color);
+    font-size: 2rem;
 }
 
 @media (max-width: 700px) {
