@@ -1,8 +1,10 @@
-const sideBar = document.querySelector(".side-bar-hidden");
+import page from "./page"
 
 function sideBarButton() {
-        sideBar.classList.toggle("side-bar-hidden");
-        sideBar.classList.toggle("side-bar");
+        page.sideBar.classList.toggle("side-bar-hidden");
+        page.sideBar.classList.toggle("side-bar-shown");
 }
 
 export {sideBarButton}
+
+//Creates functionality for the side bar hamburger button
