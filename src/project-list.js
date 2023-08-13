@@ -6,7 +6,7 @@ const projectList = [];
 addProjectToList(new Project("Default"), projectList);
 
 
-document.querySelector(".new-project-button").addEventListener("click", () => {
+page.newProjectButton.addEventListener("click", () => {
     createProjectPrompt();
 })
 
