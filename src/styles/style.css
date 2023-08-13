@@ -22,10 +22,34 @@
 }
 
 .side-bar {
-    display: block;
+    display: grid;
     height: 100vh;
+    grid-template-rows: 60px 1fr;
     position: relative;
     background-color: var(--gray-color);
+}
+
+.projects-list {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  gap: 15px;
+}
+
+.project-button {
+  height: 30px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: var(--white-color);
+  background-color: transparent;
+  appearance: none;
+  border: 0;
+}
+
+.project-button:hover {
+  background-color: #384b63;
+  cursor: pointer;
 }
 
 .side-bar-button {
@@ -33,16 +57,23 @@
     height: 50px;
     left: 4px;
     top: 4px;
+    border-radius: 100px;
+}
+
+.side-bar-button:hover {
+    background-color: #ffffff2f;
 }
 
 .side-bar-shown {
   transition: width 300ms ease-out;
   width: 20%;
+  grid-template-columns: 100%;
 }
 
 .side-bar-hidden {
   transition: width 300ms ease-out;
   width: 0%;
+  grid-template-columns: 0%;
 }
 
 .right-side {
@@ -65,6 +96,10 @@
 .content {
     background-color: var(--white-color);
     flex: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 54px auto;
+    grid-template-rows: auto;
 }
 
 .heading {
@@ -78,6 +113,17 @@
   border: 0;
   border-radius: 100px;
   background-color: transparent;
+  left: 4px;
+  top: 4px;
+  position: absolute;
+}
+
+.new-item-button svg:hover {
+  cursor: pointer;
+
+}
+.new-item-button:hover {
+  background-color: #c8c8c8;
 }
 
 .new-item-button svg {
