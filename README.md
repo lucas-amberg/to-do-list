@@ -11,3 +11,4 @@ In order of upcoming implementation:
 * Ability to store tasks on page refresh
 * Properly formatted dates for due date section
 * Ability to delete projects
+* Add support for differing screen sizes
