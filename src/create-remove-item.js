@@ -27,7 +27,7 @@ function validateItem(name, description, dueDate, priority) {
 
 function createItem(name, description, dueDate, priority) {
     if (validateItem(name.value, description.value, dueDate.value, priority.value) === true) {
-        ProjectList[page.itemsContainer.id].projectItems.push(new ToDoItem(name.value, description.value, dueDate.value, priority.value));
+        ProjectList[page.itemsContainer.id].addItem(new ToDoItem(name.value, description.value, dueDate.value, priority.value));
         listTodoItem(new ToDoItem(name.value, description.value, dueDate.value, priority.value));
     }
 }

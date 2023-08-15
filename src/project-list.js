@@ -10,10 +10,10 @@ addProjectToList(new Project("Test"), ProjectList);
 page.itemsContainer.id = "Default";
 
 //Testing page functionality
-ProjectList["Test"].projectItems.push(new ToDoItem("Homework","Complete math homework","Sunday","2"));
-ProjectList["Test"].projectItems.push(new ToDoItem("Work","Complete five assignments at work","Thursday","3"));
-ProjectList["Test"].projectItems.push(new ToDoItem("Work","Fill out timesheet","Aug 20","1"));
-ProjectList["Test"].projectItems.push(new ToDoItem("Clean room","Clean my room","Wednesday","1"));
+ProjectList["Test"].addItem(new ToDoItem("Homework","Complete math homework","Sunday","2"));
+ProjectList["Test"].addItem(new ToDoItem("Work","Complete five assignments at work","Thursday","3"));
+ProjectList["Test"].addItem(new ToDoItem("Work","Fill out timesheet","Aug 20","1"));
+ProjectList["Test"].addItem(new ToDoItem("Clean room","Clean my room","Wednesday","1"));
 
 
 console.log(ProjectList)

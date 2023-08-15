@@ -1,7 +1,5 @@
 import page from "./page";
-import { createItem, validateItem } from "./create-remove-item";
-import { listTodoItem } from "./list-todo-items";
-import { ToDoItem } from "./todo";
+import { createItem } from "./create-remove-item";
 
 function createItemInput() {
     const newItem = document.createElement("div");

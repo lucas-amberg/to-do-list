@@ -28,8 +28,7 @@ function listTodoItem(todo) {
     deleteButton.classList.add("delete-button");
 
     deleteButton.addEventListener("click", ()=> {
-        let itemIndex = ProjectList[page.itemsContainer.id].projectItems.indexOf(todo);
-        ProjectList[page.itemsContainer.id].projectItems.splice(itemIndex, 1);
+        ProjectList[page.itemsContainer.id].removeItem(todo);
         changeProject(page.itemsContainer.id);
     })
 
