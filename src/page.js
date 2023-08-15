@@ -1,5 +1,4 @@
 //Creates and/or selects DOM elements for use in other modules
-
 function webPage() {
 
     const content = document.querySelector(".content");
@@ -19,6 +18,10 @@ function webPage() {
 
     const newProjectButton = document.querySelector(".new-project-button");
 
+    let currentProject = "";
+
+    let projectButtons = document.querySelectorAll(".project-button");
+
     return {
         sideBar,
         sideBarButton,
@@ -26,7 +29,9 @@ function webPage() {
         newItemButton,
         newProjectButton,
         content,
-        itemsContainer
+        itemsContainer,
+        currentProject,
+        projectButtons
     };
 }
 

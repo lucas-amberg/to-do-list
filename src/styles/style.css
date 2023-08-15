@@ -5,6 +5,7 @@
     --gray-color: #455d7a;
     --red-color: #f95959;
     --white-color: #e3e3e3;
+    --item-color: #afafaf;
     height: 100vh;
     width: 100vh;
     overflow-x: hidden;
@@ -216,14 +217,15 @@
 }
 
 .items-container div {
-  background-color: var(--gray-color);
-  border-radius: 30px;
+  background-color: var(--item-color);
+  border-radius: 10px;
   display: flex;
   padding: 2px;
   align-items: center;
   justify-content: flex-start;
   gap: 4%;
   padding-left: 12px;
+  padding-right: 12px;
 }
 
 .items-container input {
@@ -240,6 +242,63 @@
 
 .items-container input[name="description"] {
   width: calc(min(230px,10%)*3);
+}
+
+.new-item-creator button,
+.new-item-creator button svg{
+  height: 30px;
+  width: 30px;
+}
+
+.new-item-creator svg {
+  filter: invert(100%) sepia(0%) saturate(30%) hue-rotate(229deg) brightness(112%) contrast(78%);
+}
+
+.new-item-creator button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  margin-left: auto;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.new-item-creator button:hover{
+  background-color: #1d1d1d2f;
+  cursor: pointer;
+}
+
+.item-text,
+.item-desc,
+.item-dd,
+.item-priority {
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  height: 30px;
+  color: var(--dark-color)
+}
+
+.item-text,
+.item-dd {
+  width: 10%
+}
+
+.item-desc {
+  width: 20%;
+}
+
+.high-priority {
+  border-left: 5px #c40000 solid;
+}
+
+.med-priority {
+  border-left: 5px #c49000 solid;
+}
+
+.low-priority {
+  border-left: 5px #27c400 solid;
 }
 
 

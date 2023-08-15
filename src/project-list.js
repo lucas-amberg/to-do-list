@@ -1,24 +1,36 @@
 import page from "./page";
 import {Project} from "./project.js";
+import { ToDoItem } from "./todo";
+import { changeProject } from "./change-project";
 
-const projectList = [];
+const ProjectList = {};
 
-addProjectToList(new Project("Default"), projectList);
+addProjectToList(new Project("Default"), ProjectList);
+addProjectToList(new Project("Test"), ProjectList);
+page.itemsContainer.id = "Default";
+
+//Testing page functionality
+ProjectList["Test"].projectItems.push(new ToDoItem("Homework","Complete math homework","Sunday","2"));
+ProjectList["Test"].projectItems.push(new ToDoItem("Work","Complete five assignments at work","Thursday","3"));
+ProjectList["Test"].projectItems.push(new ToDoItem("Work","Fill out timesheet","Aug 20","1"));
+ProjectList["Test"].projectItems.push(new ToDoItem("Clean room","Clean my room","Wednesday","1"));
 
 
-page.newProjectButton.addEventListener("click", () => {
-    createProjectPrompt();
-})
+console.log(ProjectList)
 
 function addProjectToList(project, projectArray) {
-    projectArray.push(project);
+    projectArray[project.name] = project;
     page.projectsList.innerHTML = "";
-    projectArray.forEach((item)=> {
+    for (const [name, project] of Object.entries(projectArray)) {
         const newItem = document.createElement("button");
         newItem.classList.add("project-button");
-        newItem.textContent = item.name;
+        newItem.textContent = name;
+        newItem.name = name;
+        newItem.addEventListener("click", ()=> {
+            changeProject(name);
+        })
         page.projectsList.appendChild(newItem);
-    })
+    }
 }
 
 function createProjectPrompt() {
@@ -40,15 +52,22 @@ function createProjectPrompt() {
     document.querySelectorAll(".name-getter-button").forEach( (projectButton) => {
         projectButton.addEventListener("click", () => {
             if (document.querySelector(".name-getter-input").value.length < 1) {
-                addProjectToList(new Project("Unnamed Project"), projectList);
+                addProjectToList(new Project("Unnamed Project"), ProjectList);
             }
             else {
-                addProjectToList(new Project(document.querySelector(".name-getter-input").value), projectList);
+                addProjectToList(new Project(document.querySelector(".name-getter-input").value), ProjectList);
             }
         })
     })
 }
 
+/* function updateProjectButtons() {
+    page.projectButtons = document.querySelectorAll(".project-button");
+    page.projectButtons.forEach( (item) => {
+        item.onclick = 
+    })
+}
+ */
 
 
-export {addProjectToList}
+export {addProjectToList, createProjectPrompt, ProjectList}
