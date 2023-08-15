@@ -1,5 +1,8 @@
 import page from "./page";
 import { changePriority } from "./priority";
+import { ProjectList } from "./project-list";
+import x from "./assets/x-icon.png";
+import { changeProject } from "./change-project";
 
 function listTodoItem(todo) {
     const newItem = document.createElement("div");
@@ -18,10 +21,25 @@ function listTodoItem(todo) {
     newPriority.classList.add("item-priority");
     changePriority(newPriority, newItem);
 
+    const deleteButton = document.createElement("button");
+    const xImg = new Image();
+    xImg.src = x;
+    deleteButton.appendChild(xImg);
+    deleteButton.classList.add("delete-button");
+
+    deleteButton.addEventListener("click", ()=> {
+        let itemIndex = ProjectList[page.itemsContainer.id].projectItems.indexOf(todo);
+        ProjectList[page.itemsContainer.id].projectItems.splice(itemIndex, 1);
+        changeProject(page.itemsContainer.id);
+    })
+
+
+
     newItem.appendChild(newTitle);
     newItem.appendChild(newDesc);
     newItem.appendChild(newDD);
     newItem.appendChild(newPriority);
+    newItem.appendChild(deleteButton);
 
     page.itemsContainer.appendChild(newItem);
 }

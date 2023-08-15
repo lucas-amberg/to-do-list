@@ -265,7 +265,8 @@
   padding: 2px;
 }
 
-.new-item-creator button:hover{
+.new-item-creator button:hover,
+.delete-button:hover{
   background-color: #1d1d1d2f;
   cursor: pointer;
 }
@@ -299,6 +300,31 @@
 
 .low-priority {
   border-left: 5px #27c400 solid;
+}
+
+.high-priority, .med-priority, .low-priority {
+  display: flex;
+}
+
+.delete-button,
+.delete-button img {
+  height: 30px;
+  width: 30px;
+}
+
+.delete-button img {
+  filter: invert(100%) sepia(0%) saturate(30%) hue-rotate(229deg) brightness(112%) contrast(78%);
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  margin-left: auto;
+  border-radius: 20px;
+  padding: 2px;
 }
 
 
