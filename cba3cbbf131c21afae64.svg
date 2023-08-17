@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg1"
+    sodipodi:docname="todo.svg"
+    viewBox="0 0 60 60"
+    sodipodi:version="0.32"
+    version="1.0"
+    y="0"
+    x="0"
+    inkscape:version="0.38.1"
+    sodipodi:docbase="/home/danny/flat/scalable/actions"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-width="1016"
+      pagecolor="#ffffff"
+      inkscape:zoom="4.9119412"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:cx="33.360269"
+      inkscape:cy="19.087874"
+      inkscape:window-y="0"
+      inkscape:window-height="685"
+      inkscape:pageopacity="0.0"
+  />
+  <rect
+      id="rect788"
+      style="fill-rule:evenodd;fill:#b3b3b3"
+      rx="2"
+      transform="matrix(1.0905 0 0 1.2616 -.40196 -4.4921)"
+      height="34.73"
+      width="41.567"
+      y="12.854"
+      x="7.3778"
+  />
+  <path
+      id="path839"
+      style="stroke:#7f7f7f;stroke-width:1pt;fill:none"
+      transform="matrix(1.0905 0 0 1.0905 -1.9717 -3.216)"
+      d="m9.5371 25.012h40.668"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+  />
+  <path
+      id="path840"
+      style="stroke:#7f7f7f;stroke-width:1pt;fill:none"
+      transform="matrix(1.0905 0 0 1.0905 -1.9717 -3.216)"
+      d="m8.8173 44.23h41.928"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+  />
+  <path
+      id="path843"
+      style="stroke:#7f7f7f;stroke-width:1pt;fill:none"
+      transform="matrix(1.0905 0 0 1.0905 -1.9717 -3.216)"
+      d="m9.5371 34.621h40.668"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+  />
+  <path
+      id="path845"
+      style="stroke:#7f7f7f;stroke-width:1pt;fill:none"
+      transform="matrix(1.0905 0 0 1.0905 -1.9717 -3.216)"
+      d="m19.042 15.553v38.509"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+  />
+  <path
+      id="path846"
+      style="stroke:#7f7f7f;stroke-width:1pt;fill:none"
+      transform="matrix(1.0905 0 0 1.0905 -1.9717 -3.216)"
+      d="m29.447 15.553v38.509"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+  />
+  <path
+      id="path848"
+      style="stroke:#7f7f7f;stroke-width:1pt;fill:none"
+      transform="matrix(1.0905 0 0 1.0905 -1.9717 -3.216)"
+      d="m39.852 15.553v38.509"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+  />
+  <rect
+      id="rect850"
+      style="stroke-linejoin:round;stroke:#7f7f7f;stroke-width:1.875;fill:none"
+      rx="2.1809"
+      height="43.815"
+      width="45.328"
+      sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.50000000)"
+      y="11.725"
+      x="7.6432"
+  />
+  <rect
+      id="rect804"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#333333;stroke-linecap:round;stroke-width:2.8278;fill:#4c4c4c"
+      rx="2"
+      transform="matrix(1.0194 0 0 .76673 1.4101 .38113)"
+      height="11.517"
+      width="51.465"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+      y="5.6563"
+      x="2.5192"
+  />
+  <path
+      id="path844"
+      sodipodi:nodetypes="ccccc"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#333333;stroke-linecap:round;stroke-width:1.875;fill:#333333"
+      d="m12.837 35.958c4.447 4.047 7.321 7.69 12.079 16.132 10.341-26.104 24.502-32.806 22.705-33.962-3.632-2.438-21.308 17.996-23.444 20.692-2.571-1.361-11.34-6.118-11.34-2.862z"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >fttodo</dc:title
+        >
+        <dc:date
+          >2011-01-31T02:06:52</dc:date
+        >
+        <dc:description
+          >Originally uploaded by Danny Allen for OCAL 0.18 this icon is part of the flat theme</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/114595/fttodo-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >flat</rdf:li
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >theme</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
