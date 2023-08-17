@@ -2,11 +2,11 @@ import page from "./page"
 import "./styles/style.css"
 
 import { sideBarButton } from "./side-bar-button"
-import { Project } from "./project.js"
-import { addProjectToList, ProjectList, createProjectPrompt } from "./project-list"
+import { createProjectPrompt } from "./project-list"
 import { createItemInput } from "./new-item-button"
+import { getProjectsFromLocalStorage } from "./local-storage"
 
-createItemInput();
+getProjectsFromLocalStorage();
 
 page.sideBarButton.addEventListener("click", () => {
     sideBarButton();

@@ -2,6 +2,7 @@ import page from "./page";
 import {ToDoItem} from "./todo.js"
 import {ProjectList} from "./project-list.js"
 import { listTodoItem } from "./list-todo-items";
+import { addProjectsToLocalStorage } from "./local-storage";
 
 function validateItem(name, description, dueDate, priority) {
     if (name.length > 20 || name.length < 1){
@@ -29,6 +30,7 @@ function createItem(name, description, dueDate, priority) {
     if (validateItem(name.value, description.value, dueDate.value, priority.value) === true) {
         ProjectList[page.itemsContainer.id].addItem(new ToDoItem(name.value, description.value, dueDate.value, priority.value));
         listTodoItem(new ToDoItem(name.value, description.value, dueDate.value, priority.value));
+        addProjectsToLocalStorage();
     }
 }
 

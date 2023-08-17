@@ -5,9 +5,9 @@ This is a to do list project I built using vanilla Javascript, HTML, and vanilla
 * Create to do list tasks with a title, description, due date, and priority
 * Ability to create multiple project pages to organize smaller tasks
 * Ability to delete tasks when needed
+* Ability to retain tasks on page refresh/close using localStorage
 
 ## Future Features
 In order of upcoming implementation:
-* Ability to store tasks on page refresh
 * Properly formatted dates for due date section
 * Ability to delete projects

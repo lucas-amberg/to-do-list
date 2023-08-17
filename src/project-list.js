@@ -2,26 +2,22 @@ import page from "./page";
 import {Project} from "./project.js";
 import { ToDoItem } from "./todo";
 import { changeProject } from "./change-project";
+import { addProjectsToLocalStorage } from "./local-storage";
 
-const ProjectList = {};
+let ProjectList = {};
+let ProjectArray = [];
 
 addProjectToList(new Project("Default"), ProjectList);
-addProjectToList(new Project("Test"), ProjectList);
+
 page.itemsContainer.id = "Default";
 
-//Testing page functionality
-ProjectList["Test"].addItem(new ToDoItem("Homework","Complete math homework","Sunday","2"));
-ProjectList["Test"].addItem(new ToDoItem("Work","Complete five assignments at work","Thursday","3"));
-ProjectList["Test"].addItem(new ToDoItem("Work","Fill out timesheet","Aug 20","1"));
-ProjectList["Test"].addItem(new ToDoItem("Clean room","Clean my room","Wednesday","1"));
+function addProjectToList(project) {
+    ProjectList[project.name] = project;
+    ProjectArray.push(project)
 
 
-console.log(ProjectList)
-
-function addProjectToList(project, projectArray) {
-    projectArray[project.name] = project;
     page.projectsList.innerHTML = "";
-    for (const [name, project] of Object.entries(projectArray)) {
+    for (const [name] of Object.entries(ProjectList)) {
         const newItem = document.createElement("button");
         newItem.classList.add("project-button");
         newItem.textContent = name;
@@ -70,4 +66,4 @@ function createProjectPrompt() {
  */
 
 
-export {addProjectToList, createProjectPrompt, ProjectList}
+export {addProjectToList, createProjectPrompt, ProjectList, ProjectArray}

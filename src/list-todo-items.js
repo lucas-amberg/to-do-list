@@ -3,6 +3,7 @@ import { changePriority } from "./priority";
 import { ProjectList } from "./project-list";
 import x from "./assets/x-icon.png";
 import { changeProject } from "./change-project";
+import { addProjectsToLocalStorage } from "./local-storage";
 
 function listTodoItem(todo) {
     const newItem = document.createElement("div");
@@ -29,10 +30,9 @@ function listTodoItem(todo) {
 
     deleteButton.addEventListener("click", ()=> {
         ProjectList[page.itemsContainer.id].removeItem(todo);
+        addProjectsToLocalStorage();
         changeProject(page.itemsContainer.id);
     })
-
-
 
     newItem.appendChild(newTitle);
     newItem.appendChild(newDesc);
