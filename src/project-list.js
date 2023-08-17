@@ -1,15 +1,19 @@
 import page from "./page";
 import {Project} from "./project.js";
-import { ToDoItem } from "./todo";
 import { changeProject } from "./change-project";
-import { addProjectsToLocalStorage } from "./local-storage";
+import { getProjectsFromLocalStorage } from "./local-storage";
+import { createItemInput } from "./new-item-button";
 
 let ProjectList = {};
 let ProjectArray = [];
 
-addProjectToList(new Project("Default"), ProjectList);
-page.itemsContainer.id = "Default";
-changeProject("Default");
+getProjectsFromLocalStorage();
+
+if (ProjectArray.length < 1) {
+    addProjectToList(new Project("Default"), ProjectList);
+    page.itemsContainer.id = "Default";
+    changeProject("Default");
+}
 
 function addProjectToList(project) {
     ProjectList[project.name] = project;
