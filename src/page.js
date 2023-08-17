@@ -7,6 +7,7 @@ function webPage() {
 
     //For add-project-to-side-bar.js
     const projectsList = document.querySelector(".projects-list");
+    const deleteProjectButton = document.querySelector(".delete-project");
 
     //For side-bar-button.js
     const sideBar = document.querySelector(".side-bar");
@@ -31,7 +32,8 @@ function webPage() {
         content,
         itemsContainer,
         currentProject,
-        projectButtons
+        projectButtons,
+        deleteProjectButton
     };
 }
 

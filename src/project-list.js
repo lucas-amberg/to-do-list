@@ -8,8 +8,8 @@ let ProjectList = {};
 let ProjectArray = [];
 
 addProjectToList(new Project("Default"), ProjectList);
-
 page.itemsContainer.id = "Default";
+changeProject("Default");
 
 function addProjectToList(project) {
     ProjectList[project.name] = project;

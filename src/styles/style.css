@@ -99,7 +99,8 @@
 }
 
 .side-bar-hidden .projects-list,
-.side-bar-hidden .side-bar-heading{
+.side-bar-hidden .side-bar-heading,
+.side-bar-hidden .delete-project{
   display: none;
 }
 
@@ -266,7 +267,8 @@
 }
 
 .new-item-creator button:hover,
-.delete-button:hover{
+.delete-button:hover,
+.delete-project:hover {
   background-color: #1d1d1d2f;
   cursor: pointer;
 }
@@ -326,6 +328,24 @@
   border-radius: 20px;
   padding: 2px;
 }
+
+.delete-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  color:var(--white-color);
+  background-color: transparent;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+  justify-self: center;
+}
+
+
 
 
 /* @media (max-width: 700px) {
