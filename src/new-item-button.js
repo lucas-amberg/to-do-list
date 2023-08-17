@@ -12,6 +12,7 @@ function createItemInput() {
     const newDescription = document.createElement("input");
     newDescription.setAttribute("name", "description");
     newDescription.setAttribute("placeholder", "A brief description of your task");
+    newName.setAttribute("maxlength", 50);
     const newDueDate = document.createElement("input");
     newDueDate.setAttribute("name", "due-date");
     newDueDate.setAttribute("placeholder", "The due date of your task");

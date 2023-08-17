@@ -14,7 +14,7 @@ function validateItem(name, description, dueDate, priority) {
         return false
     }
     else if (dueDate.length > 50) {
-        alert("Due date must be under 50 characters");
+        alert("Due date must be at most 50 characters");
         return false
     }
     else if (priority > 3 || priority < 1 || priority.length > 1) {
