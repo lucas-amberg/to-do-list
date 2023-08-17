@@ -11,3 +11,4 @@ This is a to do list project I built using vanilla Javascript, HTML, and vanilla
 In order of upcoming implementation:
 * Properly formatted dates for due date section
 * Ability to delete projects
+* Add support for differing screen sizes
