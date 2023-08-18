@@ -8,7 +8,7 @@
     --item-color: #afafaf;
     height: 100vh;
     width: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 * {
@@ -379,17 +379,6 @@
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7411%) hue-rotate(52deg) brightness(117%) contrast(78%);
 }
 
-
-
-/* @media (max-width: 700px) {
-    .right-side {
-        flex-basis: 75%;
-    }
-    .side-bar {
-        flex-basis: 25%;
-    }
-} */
-
 /* Hamburger menu */
 .hamburger-button {
     background-color: transparent;
@@ -435,3 +424,33 @@
     stroke-width: 6;
   }
   
+  /*Mobile*/
+  @media (max-width:480px) {
+    .side-bar-shown {
+      width: 50%;
+    }
+    .right-side {
+      width: 50%;
+    }
+    .name-getter-input {
+      width: 50%;
+    }
+    .content {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .new-item-creator {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center !important;
+    }
+    .new-item-creator input {
+      width: 100px;
+    }
+    .items-container input[name="description"] {
+      width: 100px;
+    }
+    .items-container {
+      grid-template-rows: repeat(auto-fit, 100px);
+    }
+  }

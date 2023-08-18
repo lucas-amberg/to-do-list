@@ -13,5 +13,10 @@
     "url": "github.com/lucas-amberg/to-do-list"
   },
   "author": "Lucas Amberg",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack-cli": "^5.1.4"
+  }
 }

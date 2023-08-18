@@ -14,6 +14,9 @@ if (ProjectArray.length < 1) {
     page.itemsContainer.id = "Default";
     changeProject("Default");
 }
+else {
+    changeProject(ProjectArray[0].name);
+}
 
 function addProjectToList(project) {
     ProjectList[project.name] = project;
