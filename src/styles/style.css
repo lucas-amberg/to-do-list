@@ -7,7 +7,7 @@
     --white-color: #e3e3e3;
     --item-color: #afafaf;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -27,14 +27,14 @@
 
 .main-body-container {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     flex: 1;
     display: flex;
 }
 
 .side-bar {
     display: grid;
-    height: 100%;
+    height: 97%;
     grid-template-rows: 60px 1fr;
     position: relative;
     background-color: var(--gray-color);
@@ -137,12 +137,15 @@
     display: grid;
     grid-template-columns: 54px auto;
     grid-template-rows: auto;
+    overflow: auto;
+    padding-bottom: 25px;
 }
 
 .heading {
     font-family: "Oswald", sans-serif;
     color: var(--white-color);
     font-size: 2rem;
+    overflow: hidden;
 }
 
 .new-item-button {
@@ -223,7 +226,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fit, 50px);
-  gap: 20px
+  gap: 20px;
+  height: auto;
+  overflow: auto;
 }
 
 .items-container div {
@@ -232,6 +237,7 @@
   display: flex;
   padding: 2px;
   align-items: center;
+  height: 50px;
   justify-content: flex-start;
   gap: 4%;
   padding-left: 12px;
@@ -361,6 +367,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
+  bottom: 0px;
+  overflow: hidden;
 }
 
 .footer a {
@@ -438,11 +447,37 @@
     .content {
       max-width: 100%;
       overflow-x: hidden;
+      overflow-y: auto;
     }
     .new-item-creator {
-      flex-wrap: wrap;
-      flex-direction: column;
+      display: grid !important;
+      grid-template-rows: 50px 50px;
+      grid-template-columns: 40% 40% 20%;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
       justify-content: center !important;
+    }
+    .new-item-creator input[name="name"],
+    .new-item-creator input[name="description"] {
+      grid-column: 1 / 2;
+    }
+    .new-item-creator input[name="due-date"],
+    .new-item-creator input[name="priority"] {
+      grid-column: 2 / 3;
+    }
+    .new-item-creator input[name="name"],
+    .new-item-creator input[name="due-date"] {
+      grid-row: 1  / 2;
+    }
+    .new-item-creator input[name="description"],
+    .new-item-creator input[name="priority"] {
+      grid-row: 2  / 3;
+    }
+    .new-item-creator button {
+      grid-row: 1 / 3;
+      grid-column: 3 / 4;
+      margin-right: 10px;
     }
     .new-item-creator input {
       width: 100px;
@@ -452,5 +487,21 @@
     }
     .items-container {
       grid-template-rows: repeat(auto-fit, 100px);
+      overflow: scroll;
+      height: auto;
+    }
+    .items-container div{
+      height: 100px;
+    }
+  }
+
+  /* Tablet */
+
+  @media (min-width: 480px) and (max-width:991px) {
+    .side-bar-shown {
+      width: 40%;
+    }
+    .right-side {
+      width: 60%;
     }
   }

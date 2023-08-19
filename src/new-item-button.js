@@ -11,11 +11,11 @@ function createItemInput() {
     newName.setAttribute("maxlength", 20);
     const newDescription = document.createElement("input");
     newDescription.setAttribute("name", "description");
-    newDescription.setAttribute("placeholder", "A brief description of your task");
-    newName.setAttribute("maxlength", 50);
+    newDescription.setAttribute("placeholder", "Description");
+    newDescription.setAttribute("maxlength", 50);
     const newDueDate = document.createElement("input");
     newDueDate.setAttribute("name", "due-date");
-    newDueDate.setAttribute("placeholder", "The due date of your task");
+    newDueDate.setAttribute("placeholder", "Due Date");
     const newPriority = document.createElement("input");
     newPriority.setAttribute("name", "priority");
     newPriority.setAttribute("placeholder", "Priority (1-3)");
